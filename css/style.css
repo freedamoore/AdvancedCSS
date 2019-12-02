@@ -52,7 +52,8 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  backface-visibility: hidden;  /*to prevent shakiness when animating heading */
+  backface-visibility: hidden;
+  /*to prevent shakiness when animating heading */
   margin-bottom: 2rem;
 }
 
@@ -109,11 +110,11 @@ body {
 
 /* main */
 /* about section */
-
-h3{
+h3 {
   text-transform: uppercase;
 }
-.section-about {
+
+.section-one {
   background-color: #fdeee8;
   padding: 20rem 0;
   margin-top: -20vh;
@@ -169,6 +170,10 @@ h3{
   width: calc((100% - 6rem)/2);
 }
 
+.col-1-of-3{
+  width: calc((100% - 2* 6rem)/3);
+}
+
 .collage {
   position: relative;
 }
@@ -209,20 +214,62 @@ h3{
   transform: scale(0.9);
 }
 
-/* footer */
+.section-two {
+  padding: 25rem 0;
+  height: 75rem;
+  background-image: linear-gradient(to right,
+    rgba(137, 48, 232, 0.7),
+    rgba(232, 104, 48, 0.7)),
+    url(../img/kitten4.jpg);
+  background-size: cover;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -25vh;
+}
 
-footer{
+.section-two-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+}
+
+.section-two-box:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.gradient-icon{
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  background: #c69cf4;
+  display: inline-block;
+  background:linear-gradient(to right bottom, #c69cf4, #f4b69c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-three {
+  background-color: #fdeee8;
+  padding: 20rem 0;
+  margin-top: -25vh;
+}
+
+/* footer */
+footer {
   color: white;
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to right top,
     rgba(137, 48, 232, 1),
     rgba(232, 104, 48, 1));
-  clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0% 100%);
-  margin-top: -20vh;
+  clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -25vh;
   padding: 20rem 6rem;
 }
 
-footer a{
+footer a {
   color: white;
   font-weight: 600;
 }
