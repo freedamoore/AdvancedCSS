@@ -170,7 +170,7 @@ h3 {
   width: calc((100% - 6rem)/2);
 }
 
-.col-1-of-3{
+.col-1-of-3 {
   width: calc((100% - 2* 6rem)/3);
 }
 
@@ -241,12 +241,12 @@ h3 {
   transform: translateY(-1.5rem) scale(1.03);
 }
 
-.gradient-icon{
+.gradient-icon {
   font-size: 6rem;
   margin-bottom: 2rem;
   background: #c69cf4;
   display: inline-block;
-  background:linear-gradient(to right bottom, #c69cf4, #f4b69c);
+  background: linear-gradient(to right bottom, #c69cf4, #f4b69c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -257,6 +257,133 @@ h3 {
   margin-top: -25vh;
 }
 
+ .card {
+  perspective: 150rem;//needed for the rotation animation
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+}
+
+.card-side {
+  height: 52rem;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+  background-color: white;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-back-1 {
+  background-image: linear-gradient(to right bottom, #8930e8, #e8308c);
+}
+.card-back-2 {
+  background-image: linear-gradient(to right bottom, #e8308c, #e83a30);
+}
+.card-back-3 {
+  background-image: linear-gradient(to right bottom, #e83a30, #e86830);
+}
+
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0);
+}
+
+.card-img {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card-img-1 {
+  background-image: linear-gradient(to right bottom, #8930e8, #e8308c), url(../img/kitten1.jpg);
+}
+
+.card-img-2 {
+  background-image: linear-gradient(to right bottom, #e8308c, #e83a30), url(../img/kitten2.jpg);
+}
+
+.card-img-3 {
+  background-image: linear-gradient(to right bottom, #e83a30, #e86830), url(../img/kitten3.jpg);
+}
+
+.card h4 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 14rem;
+  right: 0;
+  width: 75%;
+  padding: .5rem 1rem;
+}
+
+.card-heading-1 {
+  background-image: linear-gradient(to right bottom, rgba(137,48,232, 0.85), rgba(232,48,140, 0.85));
+}
+
+.card-heading-2 {
+  background-image: linear-gradient(to right bottom, rgba(232,48,140, 0.85), rgba(232,58,48, 0.85));
+}
+
+.card-heading-3 {
+  background-image: linear-gradient(to right bottom, rgba(232,58,48, 0.85), rgba(232,104,48, 0.85));
+}
+
+.card-details {
+  padding: 3rem;
+}
+
+.card-details p {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-back-contents{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.card-back-contents p{
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.btn-light{
+  background-color: #fdeee8;
+  color: #777;
+}
 /* footer */
 footer {
   color: white;
