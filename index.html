@@ -25,7 +25,7 @@
         <span class="heading-primary-main">Kittens</span>
         <span class="heading-primary-sub">cuteness overload</span>
       </h1>
-      <a href="#" class="btn btn-gradient btn-animated">Adopt a Kitten</a>
+      <a href="#choose-kitten" class="btn btn-gradient btn-animated">Adopt a Kitten</a>
     </div>
   </header>
 
@@ -37,7 +37,6 @@
           Adorable kittens for adoption
         </h2>
       </div>
-
       <div class="row">
         <div class="col col-1-of-2">
           <h3 class="margin-bottom-sm">Hover over the images</h3>
@@ -86,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="section-three">
+    <section class="section-three" id="choose-kitten">
       <div class="center-text margin-bottom-bg">
         <h2 class="heading-secondary">
           Choose your kitten
@@ -111,7 +110,7 @@
             <div class="card-side card-back card-back-1">
               <div class="card-back-contents">
                   <p>Flower Kitten</p>
-                <a href="#" class="btn btn-light btn-animated">Adopt now!</a>
+                <a href="#popup" class="btn btn-light btn-animated">Adopt now!</a>
               </div>
             </div>
           </div>
@@ -134,7 +133,7 @@
             <div class="card-side card-back card-back-2">
               <div class="card-back-contents">
                   <p>Playful Kitten</p>
-                <a href="#" class="btn btn-light btn-animated">Adopt now!</a>
+                <a href="#popup" class="btn btn-light btn-animated">Adopt now!</a>
               </div>
             </div>
           </div>
@@ -157,7 +156,7 @@
             <div class="card-side card-back card-back-3">
               <div class="card-back-contents">
                   <p>Luxury Kitten</p>
-                <a href="#" class="btn btn-light btn-animated">Adopt now!</a>
+                <a href="#popup" class="btn btn-light btn-animated">Adopt now!</a>
               </div>
             </div>
           </div>
@@ -185,12 +184,33 @@
         Kitten 3:
         Image by <a href="https://pixabay.com/users/guvo59-9285194/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4611189">Gundula Vogel</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4611189">Pixabay</a>
       </p>
-      <p>
+      <p class="margin-bottom-sm">
         Kitten 4:
         Image by <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1285341">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1285341">Pixabay</a>
       </p>
+      <p>
+        Kittens in popup:
+        Image by <a href="https://pixabay.com/users/HelgaKa-2849566/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4282123">Helga Kattinger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4282123">Pixabay</a>
+      </p>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+        <a href="#choose-kitten" class="popup__close">&times;</a>
+        <h2 class="heading-secondary margin-bottom-sm">
+          Request your kitten now!
+        </h2>
+        <h3 class="heading-tertiary margin-bottom-md">
+          Leave your details below and we will get in contact with you soon.
+        </h3>
+        <form action="#" class="form">
+            <input type="text" class="form__input" placeholder="Full name" id="name" required>
+            <input type="email" class="form__input" placeholder="Email address" id="email" required>
+            <button class="btn btn-gradient">Submit</button>
+        </form>
+    </div>
+  </div>
 
 </body>
 
