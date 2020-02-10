@@ -108,7 +108,8 @@ button:focus{
 }
 
 .btn-gradient {
-  background-image: linear-gradient(to right bottom, #c69cf4, #f4b69c);
+  /* background-image: linear-gradient(to right bottom, #c69cf4, #f4b69c); */
+  background-image: linear-gradient(to right bottom, #8930e8, #e86830);
   color: white;
 }
 
