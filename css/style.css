@@ -32,7 +32,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%)
 }
 
 .logo-box {
@@ -126,7 +126,7 @@ h3 {
 
 .section-one {
   background-color: #fdeee8;
-  padding: 18rem 5rem;
+  padding: 28rem 5rem;
   margin-top: -20vh;
 }
 
@@ -262,7 +262,7 @@ h3 {
 
 .section-three {
   background-color: #fdeee8;
-  padding: 18rem 5rem;
+  padding: 28rem 5rem;
   margin-top: -25vh;
 }
 
@@ -400,14 +400,20 @@ footer {
   background-image: linear-gradient(to right top,
     rgba(137, 48, 232, 1),
     rgba(232, 104, 48, 1));
-  clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 25vh, 100% 10%, 100% 100%, 0% 100%);
   margin-top: -25vh;
   padding: 20rem 5rem;
+  position: relative;
 }
 
 footer a {
   color: white;
   font-weight: 600;
+}
+
+.img-attribution{
+    position: absolute;
+    bottom: 50px;
 }
 
 /* popup */
